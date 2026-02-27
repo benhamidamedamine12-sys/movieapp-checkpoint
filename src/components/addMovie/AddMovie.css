@@ -1,0 +1,19 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.115);
+    position: relative;
+    left: 0;
+    width: 50%;
+  }
+}
+.button-addmovie {
+  margin-bottom: 15px;
+}

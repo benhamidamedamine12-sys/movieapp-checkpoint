@@ -1,0 +1,51 @@
+/* Styles pour les images du carousel */
+.carousel-image {
+  height: 500px; /* Augmente un peu la hauteur */
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Pour le texte */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  bottom: 40px;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px;
+  }
+
+  .carousel-caption {
+    padding: 10px;
+    bottom: 20px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+.carousel-image {
+  height: 60vh; /* 60% de la hauteur de l'écran */
+  min-height: 300px; /* Hauteur minimum sur petits écrans */
+  max-height: 600px; /* Hauteur maximum sur grands écrans */
+  object-fit: cover;
+  width: 100%;
+}

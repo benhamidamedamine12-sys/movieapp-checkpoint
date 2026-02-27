@@ -1,4 +1,5 @@
 import "./MovieCard.css";
+import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
@@ -11,7 +12,11 @@ const MovieCard = ({ movie }) => {
           <Card.Title>{movie.title}</Card.Title>
           <Card.Text>{movie.description}</Card.Text>
           <Card.Text className="Rate">Rating: {movie.rate}/10</Card.Text>
-          <Button variant="primary">Watch</Button>
+          <Link to={`/movie/${movie.id}`}>
+            <Button variant="primary" style={{ width: "100%" }}>
+              Watch & Details
+            </Button>
+          </Link>
         </Card.Body>
       </Card>
     </div>
